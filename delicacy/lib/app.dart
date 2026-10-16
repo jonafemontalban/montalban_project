@@ -8,7 +8,7 @@ const SemesterProjectApp({super.key});
 @override
 Widget build(BuildContext context) => MaterialApp(
 debugShowCheckedModeBanner: false,
-title: 'Your Approved System Title',
+title: 'Delicacy System',
 initialRoute: '/',
 routes: {
 '/': (_) => const HomeScreen(),
