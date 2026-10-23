@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/app_button.dart';
+
 const _ube = Color(0xFF4B2A6B);
 const _pandan = Color(0xFF5E8C4A);
 const _background = Color(0xFFF8F5FB);
@@ -111,6 +113,14 @@ class HomeScreen extends StatelessWidget {
                 foregroundColor: Colors.white,
               ),
               child: const Text('Log in to order'),
+            ),
+            const SizedBox(height: 10),
+            AppButton(
+              label: 'Report delicacy information',
+              icon: Icons.flag_outlined,
+              onPressed: () => Navigator.pushNamed(context, '/report'),
+              backgroundColor: Colors.white,
+              foregroundColor: _ube,
             ),
           ],
         ),
