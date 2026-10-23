@@ -86,7 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       keyboardType: TextInputType.emailAddress,
                       decoration: _fieldStyle('Email', Icons.email_outlined),
                       validator: (v) => (v == null || v.trim().isEmpty)
-                          ? 'Enter your email'
+                          ? 'Enter your email*'
                           : null,
                     ),
                     const SizedBox(height: 16),
@@ -106,7 +106,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                       validator: (v) => (v == null || v.length < 6)
-                          ? 'Use at least 6 characters'
+                          ? 'Use at least 6 characters*'
                           : null,
                     ),
                     const SizedBox(height: 24),
